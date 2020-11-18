@@ -1,0 +1,7 @@
+.form-control {
+	&.is-invalid {
+		&:not(:hover):not(:focus) + .invalid-tooltip {
+			display: none;
+		}
+	}
+}

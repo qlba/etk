@@ -1,0 +1,21 @@
+.radio {
+	@extend .d-none;
+
+	& + label {
+		cursor: pointer;
+
+		min-width: 1.5em;
+		text-align: center;
+	}
+
+	&:checked + label {
+		font-weight: bolder;
+		text-decoration: underline;
+	}
+	
+	&.is-invalid {
+		& + label {
+			color: #f00;
+		}
+	}
+}

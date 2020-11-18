@@ -1,0 +1,8 @@
+.label {
+	&__required::after {
+		color: #f00;
+		content: '*';
+
+		margin-left: 1px;
+	}
+}
